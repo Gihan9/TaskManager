@@ -1,100 +1,85 @@
-Task Manager
+## Task Manager
 A simple task management system built with Laravel.
 
-Installation Instructions
+## Installation Instructions
+
 Follow these steps to set up the project on your local machine.
 
 1. Clone the Repository
-sh
-Copy
-Edit
-git clone https://github.com/Gihan9/TaskManager.git
-cd TaskManager
+
+- Copy
+- Edit
+- git clone https://github.com/Gihan9/TaskManager.git
+- cd TaskManager
+- 
 2. Install Dependencies
+  
 Make sure you have Composer installed. Then, run:
-
-sh
-Copy
-Edit
-composer install
+- composer install
+- 
 3. Set Up Environment Variables
-Copy the .env.example file and rename it to .env:
+  
+- Copy the .env.example file and rename it to .env:
 
-sh
-Copy
-Edit
-cp .env.example .env
-Then, generate the application key:
-
-sh
-Copy
-Edit
-php artisan key:generate
+- cp .env.example .env
+- Then, generate the application key:
+- php artisan key:generate
+- 
 4. Configure Database
-Update the .env file with your database details:
+  
+- Update the .env file with your database details:
 
-makefile
-Copy
-Edit
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=task
-DB_USERNAME=root
-DB_PASSWORD=
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=task
+- DB_USERNAME=root
+- DB_PASSWORD=
+- 
 5. Run Migrations & Seeding
-Run the following command to create tables and seed initial data:
-
-sh
-Copy
-Edit
-php artisan migrate --seed
+  
+- Run the following command to create tables and seed initial data:
+- php artisan migrate --seed
+- 
 6. Install Laravel Breeze (Authentication System)
-To set up authentication with Laravel Breeze, run:
-
-sh
-Copy
-Edit
-composer require laravel/breeze --dev
-php artisan breeze:install
-npm install && npm run dev
-php artisan migrate
+  
+- To set up authentication with Laravel Breeze, run:
+- composer require laravel/breeze --dev
+- php artisan breeze:install
+- npm install && npm run dev
+- php artisan migrate
+- 
 7. Start the Application
-Run the Laravel development server:
+  
+- Run the Laravel development server:
+- php artisan serve
+  ## The app will be available at http://127.0.0.1:8000.
 
-sh
-Copy
-Edit
-php artisan serve
-The app will be available at http://127.0.0.1:8000.
+## Features
+- User authentication (Laravel Breeze)
+- Create, edit, delete tasks
+- Task status management
+- Bootstrap-based UI
+- Database Seeding
+- 
+## To seed the database with default tasks, use:
 
-Features
-User authentication (Laravel Breeze)
-Create, edit, delete tasks
-Task status management
-Bootstrap-based UI
-Database Seeding
-To seed the database with default tasks, use:
+- php artisan db:seed
+- API Endpoints (Optional)
+- Method	Endpoint	Description
+- GET	/tasks	Get all tasks
+- POST	/tasks	Create a new task
+- GET	/tasks/{id}	Get a specific task
+- PUT	/tasks/{id}	Update a task
+- DELETE	/tasks/{id}	Delete a task
+- 
+## Dependencies
+- PHP 8.x
+- Laravel 10.x
+- MySQL
+- Laravel Breeze
+- Bootstrap 5
 
-sh
-Copy
-Edit
-php artisan db:seed
-API Endpoints (Optional)
-Method	Endpoint	Description
-GET	/tasks	Get all tasks
-POST	/tasks	Create a new task
-GET	/tasks/{id}	Get a specific task
-PUT	/tasks/{id}	Update a task
-DELETE	/tasks/{id}	Delete a task
-Dependencies
-PHP 8.x
-Laravel 10.x
-MySQL
-Laravel Breeze
-Bootstrap 5
-License
-This project is open-source and available under the MIT License.
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
