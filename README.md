@@ -11,12 +11,12 @@ Follow these steps to set up the project on your local machine.
 - Edit
 - git clone https://github.com/Gihan9/TaskManager.git
 - cd TaskManager
-- 
+
 2. Install Dependencies
   
 Make sure you have Composer installed. Then, run:
 - composer install
-- 
+  
 3. Set Up Environment Variables
   
 - Copy the .env.example file and rename it to .env:
@@ -24,7 +24,7 @@ Make sure you have Composer installed. Then, run:
 - cp .env.example .env
 - Then, generate the application key:
 - php artisan key:generate
-- 
+  
 4. Configure Database
   
 - Update the .env file with your database details:
@@ -35,12 +35,12 @@ Make sure you have Composer installed. Then, run:
 - DB_DATABASE=task
 - DB_USERNAME=root
 - DB_PASSWORD=
-- 
+  
 5. Run Migrations & Seeding
   
 - Run the following command to create tables and seed initial data:
 - php artisan migrate --seed
-- 
+  
 6. Install Laravel Breeze (Authentication System)
   
 - To set up authentication with Laravel Breeze, run:
@@ -48,7 +48,7 @@ Make sure you have Composer installed. Then, run:
 - php artisan breeze:install
 - npm install && npm run dev
 - php artisan migrate
-- 
+  
 7. Start the Application
   
 - Run the Laravel development server:
@@ -61,7 +61,7 @@ Make sure you have Composer installed. Then, run:
 - Task status management
 - Bootstrap-based UI
 - Database Seeding
-- 
+  
 ## To seed the database with default tasks, use:
 
 - php artisan db:seed
@@ -72,7 +72,7 @@ Make sure you have Composer installed. Then, run:
 - GET	/tasks/{id}	Get a specific task
 - PUT	/tasks/{id}	Update a task
 - DELETE	/tasks/{id}	Delete a task
-- 
+  
 ## Dependencies
 - PHP 8.x
 - Laravel 10.x
